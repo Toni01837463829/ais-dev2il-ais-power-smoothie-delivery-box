@@ -1488,6 +1488,14 @@ Let's break down each parameter:
 - `ghcr.io/YOUR_USERNAME/YOUR_REPO:latest`
 - `ghcr.io/YOUR_USERNAME/YOUR_REPO:v42`
 
+
+‼️**BEFORE YOU CONTINUE**: Docker image tags for GHCR must be strictly lowercase! As you can see in the
+`tags` section, we are using `${{ github.repository }}`, which will get you in trouble if e.g. your GitHub 
+username contains uppercase letters. Cross check your GitHub repository URL here and if you spot any 
+uppercase characters use the information in this 
+[commit](https://github.com/Jakabi107/ais-dev2il-ais-power-smoothie-delivery-box/commit/e83ccc7a91d67b62ac2151a0817ef18978b2ec35) 
+to fix it.
+
 ### Commit and Push
 
 Save your changes, commit and push to GitHub.
