@@ -14,3 +14,8 @@ dependencies = [
 dev = [
     "pytest>=8.3.4"
 ]
+[tool.uv-secure.ignore_packages]
+Flask = ["==0.5"]
+pytest = ["==9.0.2"]
+Pygments = ["==2.19.2"]
+
